@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+ width: 100%;
+ height: auto;
+ border: 1px solid red;
+}
+
+.container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+
+}
+
+.todoList {
+    list-style: none;
+    width: 50%;
+    border: 1px solid yellow;
+    background: rgb(44, 40, 40);
+    color: rgba(84, 243, 92, 0.6);
+    
+}
+
+.todoListItem {
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    border:1px solid red;
+
+    p {
+        width: 85%;
+        border: 1px solid green;
+    }
+
+    .button {
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 80px;
+        min-height: 30px; 
+        
+    }
+   button:first-child {
+    margin-right: 20px;
+}
+
+}
+
+#add {
+    
+    width: 80px;
+    height: 30px;
+    color: rgb(20, 20, 20);
+    border: none;
+    background-color:rgb(196, 196, 196);    
+    outline-style: none;
+    cursor: pointer;
+    &:hover {
+       box-shadow:0px 0px 3px 3px rgba(83, 82, 77, 0.8); 
+    }
+}
+
